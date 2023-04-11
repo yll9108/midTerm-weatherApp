@@ -1,1 +1,14 @@
-/*# sourceMappingURL=currentweather.css.map */
+html body .headerBar {
+  display: flex;
+  justify-content: space-between;
+}
+html body .headerBar .favoriteCities {
+  width: 10rem;
+}
+html body .headerBar .searchBar {
+  width: 10rem;
+  flex-direction: end;
+}
+html body .currentWeather {
+  text-align: center;
+}/*# sourceMappingURL=currentweather.css.map */
