@@ -1,0 +1,18 @@
+html{
+    body{
+        .headerBar{
+            display: flex;
+            justify-content: space-between;
+            .favoriteCities{
+                width: 10rem;
+            }
+            .searchBar{
+                width: 10rem;
+                flex-direction: end;
+            }
+        }
+        .currentWeather{
+            text-align: center;
+        }
+    }
+}
