@@ -1,3 +1,14 @@
 #title {
   color: gray;
-}/*# sourceMappingURL=weatherapp.css.map */
+}
+#range{
+    display: flex;
+    flex-wrap: wrap;
+    height:20vh
+}
+#range div{
+    width:5vw;
+    margin-right:2vw;
+    margin-left:2vw
+}
+/*# sourceMappingURL=weatherapp.css.map */
