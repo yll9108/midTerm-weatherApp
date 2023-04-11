@@ -1,0 +1,25 @@
+html {
+    body {
+        .mainSection {
+            padding: 0 10rem 0 10rem;
+            .forecast {
+                .dayForecast {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    border: 1px solid black;
+                    #day1,
+                    #day2,
+                    #day3,
+                    #day4,
+                    #day5 {
+                        border: 1px solid black;
+                        width: 8rem;
+                        height: 10rem;
+                        margin: 0.5rem 3rem 0.5rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

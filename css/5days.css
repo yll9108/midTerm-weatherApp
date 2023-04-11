@@ -1,1 +1,19 @@
-/*# sourceMappingURL=5days.css.map */
+html body .mainSection {
+  padding: 0 10rem 0 10rem;
+}
+html body .mainSection .forecast .dayForecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+html body .mainSection .forecast .dayForecast #day1,
+html body .mainSection .forecast .dayForecast #day2,
+html body .mainSection .forecast .dayForecast #day3,
+html body .mainSection .forecast .dayForecast #day4,
+html body .mainSection .forecast .dayForecast #day5 {
+  border: 1px solid black;
+  width: 8rem;
+  height: 10rem;
+  margin: 0.5rem 3rem 0.5rem 3rem;
+}/*# sourceMappingURL=5days.css.map */
