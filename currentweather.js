@@ -1,5 +1,4 @@
 // get users location //
-
 const successCallback = (position) => {
     console.log(position);
 };

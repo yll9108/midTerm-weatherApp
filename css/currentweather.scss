@@ -1,17 +1,17 @@
-html{
-    body{
-        .headerBar{
+html {
+    body {
+        .headerBar {
             display: flex;
             justify-content: space-between;
-            .favoriteCities{
+            .favoriteCities {
                 width: 10rem;
             }
-            .searchBar{
+            .searchBar {
                 width: 10rem;
                 flex-direction: end;
             }
         }
-        .currentWeather{
+        .currentWeather {
             text-align: center;
         }
     }
