@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/weatherapp.css" />
-    <link rel="stylesheet" href="./css/currentweather.css" />
-    <link rel="stylesheet" href="./css/5days.css" />
-    <link rel="stylesheet" href="./css/3hrs.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <script src="currentweather.js"></script>
-    <script src="5days.js"></script>
-    <script src="3hrs.js"></script>
-  </head>
-  <body>
-    <sectopn class="headerBar">
-      <div class="favoriteCities">Favorite cities</div>
-      <input class="searchBar" placeholder="search"></input>
-    </sectopn>
-    <h3 id="title">Current weather</h3>
-    <section class="currentWeather">  
-      <div style="border: 1px solid black; padding: 10px">
-        <i class="fa-solid fa-star"></i>
-        <p>City Name</p>
-        <p>#c</p>
-        <p>weather info.</p>
-    </div>
-    </section>
-    <section class="forecast">
-      <h3 id="title">Daily Forecast - 5 days</h3>
-      <div style="border: 1px solid black; padding: 10px"></div>
-    </section>
-    <section class="3hrRange">
-      <h3 id="title">3 hour range</h3>
-      <div style="border: 1px solid black; padding: 10px"></div>
-    </section>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/weatherapp.css" />
+        <link rel="stylesheet" href="./css/currentweather.css" />
+        <link rel="stylesheet" href="./css/5days.css" />
+        <link rel="stylesheet" href="./css/3hrs.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+        <script src="currentweather.js"></script>
+        <script src="5days.js"></script>
+        <script src="3hrs.js"></script>
+    </head>
+    <body>
+        <section class="mainSection">
+            <section class="headerBar">
+                <div class="favoriteCities">Favorite cities</div>
+                <input class="searchBar" placeholder="search" />
+            </section>
+            <h3 id="title">Current weather</h3>
+            <section class="currentWeather">
+                <div style="border: 1px solid black; padding: 10px">
+                    <i class="fa-solid fa-star"></i>
+                    <p>City Name</p>
+                    <p>#c</p>
+                    <p>weather info.</p>
+                </div>
+            </section>
+            <section class="forecast">
+                <h3 id="title">Daily Forecast - 5 days</h3>
+                <div class="dayForecast">
+                    <div id="day1"></div>
+                    <div id="day2"></div>
+                    <div id="day3"></div>
+                    <div id="day4"></div>
+                    <div id="day5"></div>
+                </div>
+            </section>
+            <section class="3hrRange">
+                <h3 id="title">3 hour range</h3>
+                <div style="border: 1px solid black; padding: 10px"></div>
+            </section>
+        </section>
+    </body>
 </html>
