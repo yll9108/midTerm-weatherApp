@@ -1,13 +1,14 @@
 // get users location //
-// const successCallback = (position) => {
-//     console.log(position);
-// };
 
-// const errorCallback = (error) => {
-//     console.log(error);
-// };
+const successCallback = (position) => {
+    console.log(position);
+};
 
-// navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+const errorCallback = (error) => {
+    console.error(error);
+};
+
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 // fetch current weather API //
 
