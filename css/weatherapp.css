@@ -3,6 +3,13 @@
   line-height: 0.4em;
   letter-spacing: .03em;
 }
+body{
+  background-color:honeydew;
+}
+.main{
+  background-color: whitesmoke;
+  border-radius: 18px;
+}
 #title {
   color: gray;
 }
@@ -15,5 +22,13 @@
   .mainSection h3{
     color:gray
   }
-  
+  .currentWeather{
+    background-color: lightblue;
+  }
+  .dayForecast{
+    background-color: lightblue;
+  }
+  .range{
+    background-color: lightblue;
+  }
 /*# sourceMappingURL=weatherapp.css.map */
