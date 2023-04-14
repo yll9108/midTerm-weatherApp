@@ -6,18 +6,7 @@
 #title {
   color: gray;
 }
-#range{
-    display: flex;
-        width:97.5%;
-    height:20vh;
-}
-#range div {
-    border: 1px solid black; 
-    padding: 10px;
-    width: 8vw;
-    margin-right: 1.5vw;
-    margin-left: 2vw;
-  }
+
   header h4{
     color:gray;
     display: flex;

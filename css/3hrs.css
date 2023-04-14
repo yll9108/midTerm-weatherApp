@@ -2,6 +2,16 @@
 #title{
     color:gray;
 }
-#range{
-    display:flex
+.range{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+        width:97.5%;
+    height:20vh;
 }
+.range div{  
+    border: 1px solid black;padding: 10px;
+    width: 4.5vw;
+    height: 18vh;
+    
+  }
