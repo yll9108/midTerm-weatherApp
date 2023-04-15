@@ -3,17 +3,43 @@
   line-height: 0.4em;
   letter-spacing: .03em;
 }
+body{
+  background-color:honeydew;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  background-color: whitesmoke;
+  border-radius: 18px;
+}
 #title {
   color: gray;
 }
-
+.main{
+  border: 1px solid black;padding: 10px;
+  width: 70vw;
+  height: 110vh;
+  border-radius: 10px;
+}
+ .mainSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+ }
   header h4{
     color:gray;
     display: flex;
     justify-content: center;
   }
-  .mainSection h3{
-    color:gray
+
+  .currentWeather{
+    background-color: lightblue;
   }
-  
+  .dayForecast{
+    background-color: lightblue;
+  }
+  .range{
+    background-color:orange;
+  }
 /*# sourceMappingURL=weatherapp.css.map */

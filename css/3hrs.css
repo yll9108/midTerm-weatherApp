@@ -5,13 +5,22 @@
 .range{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-        width:97.5%;
-    height:20vh;
+    justify-content: space-around;
+    align-items: center;
+    height:25vh;
+    border-radius: 8px;
 }
-.range div{  
-    border: 1px solid black;padding: 10px;
-    width: 4.5vw;
-    height: 18vh;
-    
-  }
+#first,#second,#third,#fourth,#fifth,#sixth,#seventh,#eighth{  
+    background-color: aqua;
+    border: none;
+    width: 7vw;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    }
+    #first p,#second p,#third p,#fourth p,#fifth p,#sixth p,#seventh p,#eighth p{
+        font-size: 12px;
+        line-height: 1.8vh;
+    }
