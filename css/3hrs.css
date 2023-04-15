@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-        width:97.5%;
+    align-items: center;
     height:25vh;
+    border-radius: 8px;
 }
 #first,#second,#third,#fourth,#fifth,#sixth,#seventh,#eighth{  
-    border: 1px solid black;padding: 10px;
-    width: 5vw;
-    height: 22vh;
+    background-color: aqua;
+    border: none;
+    width: 7vw;
+    height: 24vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
