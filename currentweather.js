@@ -28,6 +28,7 @@ function initMap() {
         }
 
         currentUserLocation();
+
         // currentUserLocation().catch((error) => {
         //     console.error(error);
         // });
@@ -69,20 +70,19 @@ function initMap() {
     }
 
     currentWeather("Vancouver");
-
     // currentWeather("Vancouver").catch((error) => {
     //     console.error(error);
     // });
 
-    // if (searchBtn !== null) {
-    //     searchBtn.addEventListener("click", () => {
-    //         currentWeather(searchArea.value).catch((error) => {
-    //             console.error(error);
-    //         });
-    //     });
-    // } else {
-    //     console.error("searchBtn is null");
-    // }
+    if (searchBtn !== null) {
+        searchBtn.addEventListener("click", () => {
+            currentWeather(searchArea.value).catch((error) => {
+                console.error(error);
+            });
+        });
+    } else {
+        console.error("searchBtn is null");
+    }
 
     const options = {
         types: ["(cities)"],
@@ -95,28 +95,30 @@ function initMap() {
     // autocomplete.addListener("place_changed", () => {
     //     autocomplete.getPlace();
     // });
-
-    // const favoriteCities = document.querySelector("favoriteCities");
-
-    // const favorite = [];
-
-    // const addFavorite = ( // what are you going to take? // )=> {
-
-    // }
-
-    // function (save){
-    //     const favoriteCities = document.querySelector("favoriteCities").value;
-
-    //     if(localStorage.getItem() == null){
-    //         localStorage.setItem('cityData', []);
-    //     }
-
-    //     const nonFavorite = JSON.parse(localStorage.getItem('cityData'));
-    //     nonFavorite.push(favoriteCities);
-
-    //     localStorage.setItem('cityData', JSON.stringify(nonFavorite));
-
-    //     star.addEventListener("click", () => {
-    //         document.getElementById("demo").innerHTML = "Hello World!";
-    //     });
 }
+
+// add to the favorite list //
+// click the star to change color (if.. else if) or onclick//
+// adding city to the list (by local storage)//
+
+// const favoriteCities = document.querySelector("favoriteCities");
+// const addFavorite = ( // what are you going to take? // )=> {
+// }
+
+// function (save){
+//     const favoriteCities = document.querySelector("favoriteCities").value;
+
+//     if(localStorage.getItem() == null){
+//         localStorage.setItem('cityData', []);
+//     }
+
+//     const nonFavorite = JSON.parse(localStorage.getItem('cityData'));
+//     nonFavorite.push(favoriteCities);
+
+//     localStorage.setItem('cityData', JSON.stringify(nonFavorite));
+
+//     star.addEventListener("click", () => {
+//         document.getElementById("star").innerHTML = (
+//             <i class="fa-regular fa-star"></i>
+//         );
+//     });

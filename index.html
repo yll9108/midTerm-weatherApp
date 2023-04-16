@@ -19,7 +19,6 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
-        <script src="5days.js"></script>
         <script src="3hr.js"></script>
     </head>
     <body>
@@ -28,10 +27,7 @@
             <hr />
         </header>
         <section class="mainSection">
-            <section
-                class="main"
-                style="border: 1px solid black; padding: 10px"
-            >
+            <section class="main">
                 <section class="headerBar">
                     <select class="favoriteCities"></select>
                     <input id="searchBar" placeholder="search" />
@@ -44,71 +40,156 @@
                         <p id="currentWeatherCity">City Name</p>
                         <p id="currentWeatherTemp">#c</p>
                         <p id="currentWeatherFeel">Feel like</p>
-                        <p id="demo"></p>
                     </div>
                 </section>
                 <section class="forecast">
                     <h3 id="title">Daily Forecast - 5 days</h3>
                     <div class="dayForecast">
-                        <div id="day1"></div>
-                        <div id="day2"></div>
-                        <div id="day3"></div>
-                        <div id="day4"></div>
-                        <div id="day5"></div>
+                        <div id="day1">
+                            <h1 id="today">Today</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="todayTemperature">0°C</h2>
+                        </div>
+                        <div id="day2">
+                            <h1 id="tomorrow">Tomorrow</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="tomorrowTemperature">0°C</h2>
+                        </div>
+                        <div id="day3">
+                            <h1 id="D+2">D+2</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayThreeTemperature">0°C</h2>
+                        </div>
+                        <div id="day4">
+                            <h1 id="D+3">D+3</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayFourTemperature">0°C</h2>
+                        </div>
+                        <div id="day5">
+                            <h1 id="D+4">D+4</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayFiveTemperature">0°C</h2>
+                        </div>
                     </div>
                 </section>
                 <section class="threeHrRange">
                     <h3 id="title">3 hour range</h3>
-                    <div
-                        class="range"
-                        style="border: 1px solid black; padding: 10px"
-                    >
+                    <div class="range">
                         <div id="first">
                             <p id="time1">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon1"
+                            />
+                            <p id="condition1">Sunny</p>
                             <p id="temp1">Coming Temp</p>
                             <p id="feel1">Feels like</p>
                         </div>
                         <div id="second">
                             <p id="time2">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon2"
+                            />
+                            <p id="condition2">Sunny</p>
                             <p id="temp2">Coming Temp</p>
                             <p id="feel2">Feels like</p>
                         </div>
                         <div id="third">
                             <p id="time3">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon3"
+                            />
+                            <p id="condition3">Sunny</p>
                             <p id="temp3">Coming Temp</p>
                             <p id="feel3">Feels like</p>
                         </div>
                         <div id="fourth">
                             <p id="time4">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon4"
+                            />
+                            <p id="condition4">Sunny</p>
                             <p id="temp4">Coming Temp</p>
                             <p id="feel4">Feels like</p>
                         </div>
                         <div id="fifth">
                             <p id="time5">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon5"
+                            />
+                            <p id="condition5">Sunny</p>
                             <p id="temp5">Coming Temp</p>
                             <p id="feel5">Feels like</p>
                         </div>
                         <div id="sixth">
                             <p id="time6">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon6"
+                            />
+                            <p id="condition6">Sunny</p>
                             <p id="temp6">Coming Temp</p>
                             <p id="feel6">Feels like</p>
                         </div>
                         <div id="seventh">
                             <p id="time7">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon7"
+                            />
+                            <p id="condition7">Sunny</p>
                             <p id="temp7">Coming Temp</p>
                             <p id="feel7">Feels like</p>
                         </div>
                         <div id="eighth">
                             <p id="time8">Coming Time</p>
+                            <img
+                                src="weather_images/sun.png"
+                                alt="weather condition"
+                                id="condition-icon8"
+                            />
+                            <p id="condition8">Sunny</p>
                             <p id="temp8">Coming Temp</p>
                             <p id="feel8">Feels like</p>
                         </div>
-                        <script src="currentweather.js"></script>
-                        <script
-                            async
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0saOh9GRgtLNfhAWCR-HUYB43-Jx_As&libraries=places&callback=initMap"
-                        ></script>
                     </div>
+                    <script src="currentweather.js"></script>
+                    <script src="5days.js"></script>
+                    <script
+                        async
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0saOh9GRgtLNfhAWCR-HUYB43-Jx_As&libraries=places&callback=initMap"
+                    ></script>
                 </section>
             </section>
         </section>
