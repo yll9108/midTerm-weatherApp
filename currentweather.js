@@ -75,11 +75,15 @@ function initMap() {
         console.error("searchBtn is null");
     }
 
+    const options = {
+        types: ["(cities)"],
+        componentRestrictions: { country: "ca" },
+    };
     const input = document.getElementById("searchBar");
     // 定義input,裡面存放searchBar的資料
-    const autocomplete = new google.maps.places.Autocomplete(input);
+    const autocomplete = new google.maps.places.Autocomplete(input, options);
     // 定義autocomplete, 裡面存放
-    autocomplete.addListener("place_changed", () => {
-        autocomplete.getPlace();
-    });
+    // autocomplete.addListener("place_changed", () => {
+    //     autocomplete.getPlace();
+    // });
 }
