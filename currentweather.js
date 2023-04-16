@@ -42,9 +42,8 @@ function initMap() {
 
     // fetch current weather API //
 
-    // windows會等待html跑完再執行js. //
-    const searchArea = document.querySelector(".searchBar");
-    const searchBtn = document.querySelector(".searchBtn");
+    const searchArea = document.querySelector("#searchBar");
+    const searchBtn = document.querySelector("#searchBtn");
 
     async function currentWeather(city) {
         const response = await fetch(
@@ -76,17 +75,11 @@ function initMap() {
         console.error("searchBtn is null");
     }
 
-    // var input = document.getElementById('autocomplete');
-    // var autocomplete = new google.maps.places.Autocomplete(input,{types: ['(cities)']});
-    // google.maps.event.addListener(autocomplete, 'place_changed', function(){
-    //    var place = autocomplete.getPlace();
-    // })
-
-    const input = document.getElementsByClassName("searchBar");
-    const autocomplete = new google.maps.places.Autocomplete(input, {
-        types: ["(cities)"],
-    });
-    google.maps.event.addListener(autocomplete, "place_changed", function () {
-        var place = autocomplete.getPlace();
+    const input = document.getElementById("searchBar");
+    // 定義input,裡面存放searchBar的資料
+    const autocomplete = new google.maps.places.Autocomplete(input);
+    // 定義autocomplete, 裡面存放
+    autocomplete.addListener("place_changed", () => {
+        autocomplete.getPlace();
     });
 }
