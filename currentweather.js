@@ -19,13 +19,19 @@ function initMap() {
             const currentUserData = await response.json();
             console.log(currentUserData);
             userCity.innerHTML = currentUserData.name;
-            userTemp.innerHTML = `Temp: ${currentUserData.main.temp}°C`;
-            userFeel.innerHTML = `Feels like: ${currentUserData.main.feels_like}°C`;
+            userTemp.innerHTML = `Temp: ${Math.round(
+                currentUserData.main.temp
+            )}°C`;
+            userFeel.innerHTML = `Feels like: ${Math.round(
+                currentUserData.main.feels_like
+            )}°C`;
         }
 
-        currentUserLocation().catch((error) => {
-            console.error(error);
-        });
+        currentUserLocation();
+
+        // currentUserLocation().catch((error) => {
+        //     console.error(error);
+        // });
     }
 
     function successCallback(position) {
@@ -55,15 +61,18 @@ function initMap() {
             currentData.name;
         document.getElementById(
             "currentWeatherTemp"
-        ).innerHTML = `Temp: ${currentData.main.temp}°C`;
+        ).innerHTML = `Temp: ${Math.round(currentData.main.temp)}°C`;
         document.getElementById(
             "currentWeatherFeel"
-        ).innerHTML = `Feels like: ${currentData.main.feels_like}°C`;
+        ).innerHTML = `Feels like: ${Math.round(
+            currentData.main.feels_like
+        )}°C`;
     }
 
-    currentWeather("London").catch((error) => {
-        console.error(error);
-    });
+    currentWeather("Vancouver");
+    // currentWeather("Vancouver").catch((error) => {
+    //     console.error(error);
+    // });
 
     if (searchBtn !== null) {
         searchBtn.addEventListener("click", () => {
@@ -87,3 +96,29 @@ function initMap() {
     //     autocomplete.getPlace();
     // });
 }
+
+// add to the favorite list //
+// click the star to change color (if.. else if) or onclick//
+// adding city to the list (by local storage)//
+
+// const favoriteCities = document.querySelector("favoriteCities");
+// const addFavorite = ( // what are you going to take? // )=> {
+// }
+
+// function (save){
+//     const favoriteCities = document.querySelector("favoriteCities").value;
+
+//     if(localStorage.getItem() == null){
+//         localStorage.setItem('cityData', []);
+//     }
+
+//     const nonFavorite = JSON.parse(localStorage.getItem('cityData'));
+//     nonFavorite.push(favoriteCities);
+
+//     localStorage.setItem('cityData', JSON.stringify(nonFavorite));
+
+//     star.addEventListener("click", () => {
+//         document.getElementById("star").innerHTML = (
+//             <i class="fa-regular fa-star"></i>
+//         );
+//     });
