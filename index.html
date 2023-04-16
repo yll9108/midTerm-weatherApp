@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/weatherapp.css" />
-    <link rel="stylesheet" href="./css/currentweather.css" />
-    <link rel="stylesheet" href="./css/5days.css" />
-    <link rel="stylesheet" href="./css/3hrs.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <script src="currentweather.js"></script>
-    <script src="5days.js"></script>
-    <script src="3hr.js"></script>
-  </head>
-  <body>
-    <header>
-      <h4>Weather App</h4>
-      <hr />
-    </header>
-    <section class="mainSection">
-      <section class="main" style="border: 1px solid black; padding: 10px">
-        <section class="headerBar">
-          <div class="favoriteCities">Favorite cities</div>
-          <input class="searchBar" placeholder="search" />
-          <button class="searchBtn">Click</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/weatherapp.css" />
+        <link rel="stylesheet" href="./css/currentweather.css" />
+        <link rel="stylesheet" href="./css/5days.css" />
+        <link rel="stylesheet" href="./css/3hrs.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+        <script src="5days.js"></script>
+        <script src="3hr.js"></script>
+    </head>
+    <body>
+        <header>
+            <h4>Weather App</h4>
+            <hr />
+        </header>
+        <section class="mainSection">
+            <section
+                class="main"
+                style="border: 1px solid black; padding: 10px"
+            >
+                <section class="headerBar">
+                    <div class="favoriteCities">Favorite cities</div>
+                    <input class="searchBar" placeholder="search" />
+                    <button class="searchBtn">Click</button>
+                </section>
+                <h3 id="title">Current weather</h3>
+                <section class="currentWeather">
+                    <div style="border: 1px solid black; padding: 10px">
+                        <i class="fa-solid fa-star"></i>
+                        <p id="currentWeatherCity">City Name</p>
+                        <p id="currentWeatherTemp">#c</p>
+                        <p id="currentWeatherFeel">Feel like</p>
+                    </div>
+                </section>
+                <section class="forecast">
+                    <h3 id="title">Daily Forecast - 5 days</h3>
+                    <div class="dayForecast">
+                        <div id="day1"></div>
+                        <div id="day2"></div>
+                        <div id="day3"></div>
+                        <div id="day4"></div>
+                        <div id="day5"></div>
+                    </div>
+                </section>
+                <section class="threeHrRange">
+                    <h3 id="title">3 hour range</h3>
+                    <div
+                        class="range"
+                        style="border: 1px solid black; padding: 10px"
+                    >
+                        <div id="first">
+                            <p id="time1">Coming Time</p>
+                            <p id="temp1">Coming Temp</p>
+                            <p id="feel1">Feels like</p>
+                        </div>
+                        <div id="second">
+                            <p id="time2">Coming Time</p>
+                            <p id="temp2">Coming Temp</p>
+                            <p id="feel2">Feels like</p>
+                        </div>
+                        <div id="third">
+                            <p id="time3">Coming Time</p>
+                            <p id="temp3">Coming Temp</p>
+                            <p id="feel3">Feels like</p>
+                        </div>
+                        <div id="fourth">
+                            <p id="time4">Coming Time</p>
+                            <p id="temp4">Coming Temp</p>
+                            <p id="feel4">Feels like</p>
+                        </div>
+                        <div id="fifth">
+                            <p id="time5">Coming Time</p>
+                            <p id="temp5">Coming Temp</p>
+                            <p id="feel5">Feels like</p>
+                        </div>
+                        <div id="sixth">
+                            <p id="time6">Coming Time</p>
+                            <p id="temp6">Coming Temp</p>
+                            <p id="feel6">Feels like</p>
+                        </div>
+                        <div id="seventh">
+                            <p id="time7">Coming Time</p>
+                            <p id="temp7">Coming Temp</p>
+                            <p id="feel7">Feels like</p>
+                        </div>
+                        <div id="eighth">
+                            <p id="time8">Coming Time</p>
+                            <p id="temp8">Coming Temp</p>
+                            <p id="feel8">Feels like</p>
+                        </div>
+                        <script src="currentweather.js"></script>
+                        <script
+                            async
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0saOh9GRgtLNfhAWCR-HUYB43-Jx_As&libraries=places&callback=initMap"
+                        ></script>
+                    </div>
+                </section>
+            </section>
         </section>
-        <h3 id="title">Current weather</h3>
-        <section class="currentWeather">
-          <div style="border: 1px solid black; padding: 10px">
-            <i class="fa-solid fa-star"></i>
-            <p id="currentWeatherCity">City Name</p>
-            <p id="currentWeatherTemp">#c</p>
-            <p id="currentWeatherFeel">Feel like</p>
-          </div>
-        </section>
-        <section class="forecast">
-          <h3 id="title">Daily Forecast - 5 days</h3>
-          <div class="dayForecast">
-            <div id="day1"></div>
-            <div id="day2"></div>
-            <div id="day3"></div>
-            <div id="day4"></div>
-            <div id="day5"></div>
-          </div>
-        </section>
-        <section class="threeHrRange">
-          <h3 id="title">3 hour range</h3>
-          <div class="range" style="border: 1px solid black; padding: 10px">
-            <div id="first">
-              <p id="time1">Coming Time</p>
-              <p id="temp1">Coming Temp</p>
-              <p id="feel1">Feels like</p>
-            </div>
-            <div id="second">
-              <p id="time2">Coming Time</p>
-              <p id="temp2">Coming Temp</p>
-              <p id="feel2">Feels like</p>
-            </div>
-            <div id="third">
-              <p id="time3">Coming Time</p>
-              <p id="temp3">Coming Temp</p>
-              <p id="feel3">Feels like</p>
-            </div>
-            <div id="fourth">
-              <p id="time4">Coming Time</p>
-              <p id="temp4">Coming Temp</p>
-              <p id="feel4">Feels like</p>
-            </div>
-            <div id="fifth">
-              <p id="time5">Coming Time</p>
-              <p id="temp5">Coming Temp</p>
-              <p id="feel5">Feels like</p>
-            </div>
-            <div id="sixth">
-              <p id="time6">Coming Time</p>
-              <p id="temp6">Coming Temp</p>
-              <p id="feel6">Feels like</p>
-            </div>
-            <div id="seventh">
-              <p id="time7">Coming Time</p>
-              <p id="temp7">Coming Temp</p>
-              <p id="feel7">Feels like</p>
-            </div>
-            <div id="eighth">
-              <p id="time8">Coming Time</p>
-              <p id="temp8">Coming Temp</p>
-              <p id="feel8">Feels like</p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-  </body>
+    </body>
 </html>
