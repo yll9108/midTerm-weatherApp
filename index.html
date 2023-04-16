@@ -19,7 +19,6 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
-        <script src="5days.js"></script>
         <script src="3hr.js"></script>
     </head>
     <body>
@@ -46,11 +45,51 @@
                 <section class="forecast">
                     <h3 id="title">Daily Forecast - 5 days</h3>
                     <div class="dayForecast">
-                        <div id="day1"></div>
-                        <div id="day2"></div>
-                        <div id="day3"></div>
-                        <div id="day4"></div>
-                        <div id="day5"></div>
+                        <div id="day1">
+                            <h1 id="today">Today</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="todayTemperature">0°C</h2>
+                        </div>
+                        <div id="day2">
+                            <h1 id="tomorrow">Tomorrow</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="tomorrowTemperature">0°C</h2>
+                        </div>
+                        <div id="day3">
+                            <h1 id="D+2">D+2</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayThreeTemperature">0°C</h2>
+                        </div>
+                        <div id="day4">
+                            <h1 id="D+3">D+3</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayFourTemperature">0°C</h2>
+                        </div>
+                        <div id="day5">
+                            <h1 id="D+4">D+4</h1>
+                            <img
+                                class="weatherIcon"
+                                src="weather_images/cloud.png"
+                                alt="weather"
+                            />
+                            <h2 id="dayFiveTemperature">0°C</h2>
+                        </div>
                     </div>
                 </section>
                 <section class="threeHrRange">
@@ -146,6 +185,7 @@
                         </div>
                     </div>
                     <script src="currentweather.js"></script>
+                    <script src="5days.js"></script>
                     <script
                         async
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0saOh9GRgtLNfhAWCR-HUYB43-Jx_As&libraries=places&callback=initMap"

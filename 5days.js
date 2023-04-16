@@ -124,11 +124,11 @@ async function fiveDaysForecast(city) {
             Math.round(data.list[i].main.temp) + "°C";
 
         if (data.list[i].weather[0].main == "Clouds") {
-            weatherImage.src = "images/cloud.png";
+            weatherImage.src = "weather_images/cloud.png";
         } else if (data.list[i].weather[0].main == "Clear") {
-            weatherImage.src = "images/sun.png";
+            weatherImage.src = "weather_images/clear.png";
         } else if (data.list[i].weather[0].main == "Rain") {
-            weatherImage.src = "images/raining.png";
+            weatherImage.src = "weather_images/raining.png";
         }
     }
 }
