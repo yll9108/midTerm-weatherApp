@@ -4,21 +4,20 @@
   letter-spacing: .03em;
 }
 body{
-  background-color:honeydew;
+  background-image: url("../weather_images/photo.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
   display: flex;
   flex-direction: column;
 }
-.main{
-  background-color: whitesmoke;
-  border-radius: 18px;
-}
+
 #title {
-  color: gray;
+  color: white;
 }
 .main{
-  border: 1px solid black;padding: 10px;
+ 
   width: 70vw;
-  height: 110vh;
+  height: 120vh;
   border-radius: 10px;
 }
  .mainSection{
@@ -28,18 +27,38 @@ body{
   margin-top: 5vh;
  }
   header h4{
-    color:gray;
+    color:white;
     display: flex;
     justify-content: center;
   }
 
   .currentWeather{
     background-color: lightblue;
+    border-radius: 10px;
   }
   .dayForecast{
     background-color: lightblue;
   }
-  .range{
-    background-color:orange;
+ 
+  .image-container {
+    background-color: transparent;
+  }
+  .favoriteCities{
+    color:white;
+    
+  }
+  .dayForecast{
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+    body{
+      background-image: url("../weather_images/bg3.jpeg");
+            background-repeat: repeat-x;
+            background-size: cover;
+            background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+    }
+    
   }
 /*# sourceMappingURL=weatherapp.css.map */
