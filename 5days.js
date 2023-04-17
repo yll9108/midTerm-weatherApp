@@ -34,6 +34,8 @@ async function fiveDaysForecast(city) {
         weatherImage2.src = "weather_images/clear.png";
     } else if (data.list[7].weather[0].main == "Rain") {
         weatherImage2.src = "weather_images/raining.png";
+    } else if (data.list[7].weather[0].main == "Snowing") {
+        weatherImage4.src = "weather_images/snowing.png";
     }
 
     if (data.list[15].weather[0].main == "Clouds") {
@@ -42,6 +44,8 @@ async function fiveDaysForecast(city) {
         weatherImage3.src = "weather_images/clear.png";
     } else if (data.list[15].weather[0].main == "Rain") {
         weatherImage3.src = "weather_images/raining.png";
+    } else if (data.list[15].weather[0].main == "Snowing") {
+        weatherImage4.src = "weather_images/snowing.png";
     }
 
     if (data.list[23].weather[0].main == "Clouds") {
@@ -50,6 +54,8 @@ async function fiveDaysForecast(city) {
         weatherImage4.src = "weather_images/clear.png";
     } else if (data.list[23].weather[0].main == "Rain") {
         weatherImage4.src = "weather_images/raining.png";
+    } else if (data.list[23].weather[0].main == "Snowing") {
+        weatherImage4.src = "weather_images/snowing.png";
     }
 
     if (data.list[31].weather[0].main == "Clouds") {
@@ -58,6 +64,8 @@ async function fiveDaysForecast(city) {
         weatherImage5.src = "weather_images/clear.png";
     } else if (data.list[31].weather[0].main == "Rain") {
         weatherImage5.src = "weather_images/raining.png";
+    } else if (data.list[31].weather[0].main == "Snowing") {
+        weatherImage4.src = "weather_images/snowing.png";
     }
 
     if (data.list[39].weather[0].main == "Clouds") {
@@ -66,6 +74,8 @@ async function fiveDaysForecast(city) {
         weatherImage1.src = "weather_images/clear.png";
     } else if (data.list[39].weather[0].main == "Rain") {
         weatherImage1.src = "weather_images/raining.png";
+    } else if (data.list[39].weather[0].main == "Snowing") {
+        weatherImage4.src = "weather_images/snowing.png";
     }
 
     const currentDay = new Date();

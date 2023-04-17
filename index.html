@@ -19,13 +19,17 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
+        <link
+            rel="icon"
+            href="weather_images/sun.ico"
+            type="image/x-icon"
+            sizes="32x32"
+        />
+        <title>Weather App</title>
         <script src="3hr.js"></script>
     </head>
     <body>
-        <header>
-            <h1>Weather App</h1>
-            <hr />
-        </header>
+        <header></header>
         <section class="mainSection">
             <section class="main">
                 <section class="headerBar">
@@ -37,7 +41,12 @@
                 <section class="currentWeather">
                     <div>
                         <i class="fa-solid fa-star" id="star"></i>
-                        <p id="currentWeatherCity">City Name</p>
+                        <h1 id="currentWeatherCity">City Name</h1>
+                        <img
+                            id="currentWeatherIcon"
+                            src="weather_images/search.png"
+                            alt="currentWeather"
+                        />
                         <p id="currentWeatherTemp">#c</p>
                         <p id="currentWeatherFeel">Feel like</p>
                     </div>

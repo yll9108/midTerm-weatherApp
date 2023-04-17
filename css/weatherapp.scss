@@ -29,6 +29,7 @@
                 }
                 #title {
                     color: white;
+                    font-size: 1.5rem;
                 }
                 .currentWeather {
                     background-color: #118ab2;
@@ -40,7 +41,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     body {
         background-image: url("../weather_images/bg3.jpeg");
         background-repeat: repeat-x;
