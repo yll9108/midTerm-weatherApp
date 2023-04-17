@@ -12,13 +12,14 @@ html {
                     justify-content: space-between;
                     .favoriteCities {
                         color: white;
-                        width: 10rem;
+                        width: 20rem;
                     }
                     #searchCity {
                         #searchBar {
                             width: 15rem;
                             height: 2rem;
                             padding-left: 0.5rem;
+                            font-size: 1rem;
                         }
                         #searchBar::placeholder {
                             font-size: 1rem;
@@ -67,6 +68,7 @@ html {
                                 width: 6rem;
                                 height: 1rem;
                                 padding: 0 0.2rem;
+                                font-size: 0.5rem;
                             }
                             #searchBar::placeholder {
                                 font-size: 0.5rem;

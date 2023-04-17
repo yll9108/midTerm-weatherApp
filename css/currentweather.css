@@ -9,12 +9,13 @@ html body .mainSection .main .headerBar {
 }
 html body .mainSection .main .headerBar .favoriteCities {
   color: white;
-  width: 10rem;
+  width: 20rem;
 }
 html body .mainSection .main .headerBar #searchCity #searchBar {
   width: 15rem;
   height: 2rem;
   padding-left: 0.5rem;
+  font-size: 1rem;
 }
 html body .mainSection .main .headerBar #searchCity #searchBar::-moz-placeholder {
   font-size: 1rem;
@@ -58,6 +59,7 @@ html body .mainSection .main .currentWeather #currentWeatherIcon {
     width: 6rem;
     height: 1rem;
     padding: 0 0.2rem;
+    font-size: 0.5rem;
   }
   html body .mainSection .main .headerBar #searchCity #searchBar::-moz-placeholder {
     font-size: 0.5rem;
