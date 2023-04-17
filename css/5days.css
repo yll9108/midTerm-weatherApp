@@ -16,7 +16,7 @@ html body .mainSection .forecast .dayForecast #D3,
 html body .mainSection .forecast .dayForecast #D4 {
   width: 9rem;
   height: auto;
-  padding: 0.5rem;
+  padding: 2rem 1rem;
   background-color: #118ab2;
   border-radius: 10px;
   display: flex;
@@ -29,7 +29,7 @@ html body .mainSection .forecast .dayForecast #tomorrow h1,
 html body .mainSection .forecast .dayForecast #D2 h1,
 html body .mainSection .forecast .dayForecast #D3 h1,
 html body .mainSection .forecast .dayForecast #D4 h1 {
-  margin: 1rem;
+  margin: 0;
   font-size: 1.5rem;
 }
 html body .mainSection .forecast .dayForecast #today h2,
@@ -37,7 +37,7 @@ html body .mainSection .forecast .dayForecast #tomorrow h2,
 html body .mainSection .forecast .dayForecast #D2 h2,
 html body .mainSection .forecast .dayForecast #D3 h2,
 html body .mainSection .forecast .dayForecast #D4 h2 {
-  margin: 1rem;
+  margin: 0;
 }
 html body .mainSection .forecast .dayForecast #today #weatherIcon1,
 html body .mainSection .forecast .dayForecast #today #weatherIcon2,
@@ -66,5 +66,5 @@ html body .mainSection .forecast .dayForecast #D4 #weatherIcon4,
 html body .mainSection .forecast .dayForecast #D4 #weatherIcon5 {
   width: 3rem;
   height: 3rem;
-  margin: 0.5rem 2rem;
+  margin: 2rem;
 }/*# sourceMappingURL=5days.css.map */
