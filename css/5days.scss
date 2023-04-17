@@ -45,4 +45,37 @@ html {
             }
         }
     }
+    @media only screen and (max-width: 375px) {
+        body {
+            .mainSection {
+                .main {
+                    .forecast {
+                        .dayForecast {
+                            #today,
+                            #tomorrow,
+                            #D2,
+                            #D3,
+                            #D4 {
+                                width: 2.5rem;
+                                padding: 1rem;
+                                h1,
+                                h2 {
+                                    font-size: 0.5rem;
+                                }
+                                #weatherIcon1,
+                                #weatherIcon2,
+                                #weatherIcon3,
+                                #weatherIcon4,
+                                #weatherIcon5 {
+                                    width: 1rem;
+                                    height: 1rem;
+                                    margin: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

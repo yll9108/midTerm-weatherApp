@@ -11,6 +11,7 @@ html {
                     display: flex;
                     justify-content: space-between;
                     .favoriteCities {
+                        color: white;
                         width: 10rem;
                     }
                     #searchCity {
@@ -29,26 +30,67 @@ html {
                         }
                     }
                 }
+                .currentWeather {
+                    border-radius: 10px;
+                    text-align: center;
+                    #currentWeatherCity {
+                        font-size: 3rem;
+                        margin: 1rem;
+                    }
+                    #currentWeatherTemp,
+                    #currentWeatherFeel {
+                        font-size: 1.5rem;
+                    }
+                    #currentWeatherIcon {
+                        width: 10rem;
+                        height: 10rem;
+                    }
+                }
             }
-
-            .currentWeather {
-                border-radius: 10px;
-                text-align: center;
-                #currentWeatherCity {
-                    font-size: 3rem;
-                    margin: 1rem;
+        }
+    }
+    @media only screen and (max-width: 375px) {
+        body {
+            .mainSection {
+                .main {
+                    .headerBar {
+                        .favoriteCities {
+                            width: 8rem;
+                        }
+                        #searchCity {
+                            display: flex;
+                            align-items: center;
+                            #searchBar {
+                                width: 8rem;
+                                height: 1rem;
+                                padding: 0 0.2rem;
+                            }
+                            #searchBar::placeholder {
+                                font-size: 0.5rem;
+                            }
+                            #searchBtn {
+                                width: 2rem;
+                                height: 1rem;
+                                font-size: 0.5rem;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .currentWeather {
+                        #currentWeatherCity {
+                            font-size: 1.5rem;
+                            margin: 1rem;
+                        }
+                        #currentWeatherTemp,
+                        #currentWeatherFeel {
+                            font-size: 1rem;
+                        }
+                        #currentWeatherIcon {
+                            width: 5rem;
+                            height: 5rem;
+                        }
+                    }
                 }
-                #currentWeatherTemp,
-                #currentWeatherFeel {
-                    font-size: 1.5rem;
-                }
-                #currentWeatherIcon {
-                    width: 10rem;
-                    height: 10rem;
-                }
-            }
-            .favoriteCities {
-                color: white;
             }
         }
     }

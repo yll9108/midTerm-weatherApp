@@ -8,6 +8,7 @@ html body .mainSection .main .headerBar {
   justify-content: space-between;
 }
 html body .mainSection .main .headerBar .favoriteCities {
+  color: white;
   width: 10rem;
 }
 html body .mainSection .main .headerBar #searchCity #searchBar {
@@ -26,22 +27,57 @@ html body .mainSection .main .headerBar #searchCity #searchBtn {
   height: 2rem;
   font-size: 1rem;
 }
-html body .mainSection .currentWeather {
+html body .mainSection .main .currentWeather {
   border-radius: 10px;
   text-align: center;
 }
-html body .mainSection .currentWeather #currentWeatherCity {
+html body .mainSection .main .currentWeather #currentWeatherCity {
   font-size: 3rem;
   margin: 1rem;
 }
-html body .mainSection .currentWeather #currentWeatherTemp,
-html body .mainSection .currentWeather #currentWeatherFeel {
+html body .mainSection .main .currentWeather #currentWeatherTemp,
+html body .mainSection .main .currentWeather #currentWeatherFeel {
   font-size: 1.5rem;
 }
-html body .mainSection .currentWeather #currentWeatherIcon {
+html body .mainSection .main .currentWeather #currentWeatherIcon {
   width: 10rem;
   height: 10rem;
 }
-html body .mainSection .favoriteCities {
-  color: white;
+@media only screen and (max-width: 375px) {
+  html body .mainSection .main .headerBar .favoriteCities {
+    width: 8rem;
+  }
+  html body .mainSection .main .headerBar #searchCity {
+    display: flex;
+    align-items: center;
+  }
+  html body .mainSection .main .headerBar #searchCity #searchBar {
+    width: 8rem;
+    height: 1rem;
+    padding: 0 0.2rem;
+  }
+  html body .mainSection .main .headerBar #searchCity #searchBar::-moz-placeholder {
+    font-size: 0.5rem;
+  }
+  html body .mainSection .main .headerBar #searchCity #searchBar::placeholder {
+    font-size: 0.5rem;
+  }
+  html body .mainSection .main .headerBar #searchCity #searchBtn {
+    width: 2rem;
+    height: 1rem;
+    font-size: 0.5rem;
+    padding: 0;
+  }
+  html body .mainSection .main .currentWeather #currentWeatherCity {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  html body .mainSection .main .currentWeather #currentWeatherTemp,
+  html body .mainSection .main .currentWeather #currentWeatherFeel {
+    font-size: 1rem;
+  }
+  html body .mainSection .main .currentWeather #currentWeatherIcon {
+    width: 5rem;
+    height: 5rem;
+  }
 }/*# sourceMappingURL=currentweather.css.map */

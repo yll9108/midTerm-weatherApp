@@ -67,4 +67,55 @@ html body .mainSection .forecast .dayForecast #D4 #weatherIcon5 {
   width: 3rem;
   height: 3rem;
   margin: 2rem;
+}
+@media only screen and (max-width: 375px) {
+  html body .mainSection .main .forecast .dayForecast #today,
+  html body .mainSection .main .forecast .dayForecast #tomorrow,
+  html body .mainSection .main .forecast .dayForecast #D2,
+  html body .mainSection .main .forecast .dayForecast #D3,
+  html body .mainSection .main .forecast .dayForecast #D4 {
+    width: 2.5rem;
+    padding: 1rem;
+  }
+  html body .mainSection .main .forecast .dayForecast #today h1,
+  html body .mainSection .main .forecast .dayForecast #today h2,
+  html body .mainSection .main .forecast .dayForecast #tomorrow h1,
+  html body .mainSection .main .forecast .dayForecast #tomorrow h2,
+  html body .mainSection .main .forecast .dayForecast #D2 h1,
+  html body .mainSection .main .forecast .dayForecast #D2 h2,
+  html body .mainSection .main .forecast .dayForecast #D3 h1,
+  html body .mainSection .main .forecast .dayForecast #D3 h2,
+  html body .mainSection .main .forecast .dayForecast #D4 h1,
+  html body .mainSection .main .forecast .dayForecast #D4 h2 {
+    font-size: 0.5rem;
+  }
+  html body .mainSection .main .forecast .dayForecast #today #weatherIcon1,
+  html body .mainSection .main .forecast .dayForecast #today #weatherIcon2,
+  html body .mainSection .main .forecast .dayForecast #today #weatherIcon3,
+  html body .mainSection .main .forecast .dayForecast #today #weatherIcon4,
+  html body .mainSection .main .forecast .dayForecast #today #weatherIcon5,
+  html body .mainSection .main .forecast .dayForecast #tomorrow #weatherIcon1,
+  html body .mainSection .main .forecast .dayForecast #tomorrow #weatherIcon2,
+  html body .mainSection .main .forecast .dayForecast #tomorrow #weatherIcon3,
+  html body .mainSection .main .forecast .dayForecast #tomorrow #weatherIcon4,
+  html body .mainSection .main .forecast .dayForecast #tomorrow #weatherIcon5,
+  html body .mainSection .main .forecast .dayForecast #D2 #weatherIcon1,
+  html body .mainSection .main .forecast .dayForecast #D2 #weatherIcon2,
+  html body .mainSection .main .forecast .dayForecast #D2 #weatherIcon3,
+  html body .mainSection .main .forecast .dayForecast #D2 #weatherIcon4,
+  html body .mainSection .main .forecast .dayForecast #D2 #weatherIcon5,
+  html body .mainSection .main .forecast .dayForecast #D3 #weatherIcon1,
+  html body .mainSection .main .forecast .dayForecast #D3 #weatherIcon2,
+  html body .mainSection .main .forecast .dayForecast #D3 #weatherIcon3,
+  html body .mainSection .main .forecast .dayForecast #D3 #weatherIcon4,
+  html body .mainSection .main .forecast .dayForecast #D3 #weatherIcon5,
+  html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon1,
+  html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon2,
+  html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon3,
+  html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon4,
+  html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon5 {
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem;
+  }
 }/*# sourceMappingURL=5days.css.map */
