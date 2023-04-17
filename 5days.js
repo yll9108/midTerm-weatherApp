@@ -1,115 +1,13 @@
-const KevinApiKey = "8beb5bc835705e20ec03ce8c8ecb088e";
+const KevinApiKey = "cc736740f255d96b33c502e2115ebb79";
 const fiveDaysApiUrl =
     "http://api.openweathermap.org/data/2.5/forecast?units=metric";
-const weatherImage = document.querySelector(".weatherIcon");
-const searchBar = document.querySelector(".headerBar input");
-const searchBtn = document.querySelector(".headerBar button");
-
-// async function todayForecast(city) {
-//     const result = await fetch(
-//         fiveDaysApiUrl + `&q=${city}` + `&appid=${KevinApiKey}`
-//     );
-//     let data = await result.json();
-
-//     console.log(data);
-
-//     if (data.list[0].weather[0].main == "Clouds") {
-//         weatherImage.src = "images/cloud.png";
-//     } else if (data.list[0].weather[0].main == "Clear") {
-//         weatherImage.src = "images/sun.png";
-//     } else if (data.list[0].weather[0].main == "Rain") {
-//         weatherImage.src = "images/raining.png";
-//     }
-
-//     document.getElementById("todayTemperature").innerHTML =
-//         Math.round(data.list[0].main.temp) + "°C";
-// }
-
-// async function tomorrowForecast() {
-//     const result = await fetch(
-//         fiveDaysApiUrl + `&q=${city}` + `&appid=${KevinApiKey}`
-//     );
-//     let data = await result.json();
-
-//     if (data.list[8].weather[0].main == "Clouds") {
-//         weatherImage.src = "images/cloud.png";
-//     } else if (data.list[8].weather[0].main == "Clear") {
-//         weatherImage.src = "images/sun.png";
-//     } else if (data.list[8].weather[0].main == "Rain") {
-//         weatherImage.src = "images/raining.png";
-//     }
-
-//     document.getElementById("tomorrowTemperature").innerHTML =
-//         Math.round(data.list[8].main.temp) + "°C";
-// }
-
-// async function dayThreeForecast() {
-//     const result = await fetch(
-//         fiveDaysApiUrl + `&q=${city}` + `&appid=${KevinApiKey}`
-//     );
-//     let data = await result.json();
-
-//     if (data.list[16].weather[0].main == "Clouds") {
-//         weatherImage.src = "images/cloud.png";
-//     } else if (data.list[16].weather[0].main == "Clear") {
-//         weatherImage.src = "images/sun.png";
-//     } else if (data.list[16].weather[0].main == "Rain") {
-//         weatherImage.src = "images/raining.png";
-//     }
-
-//     document.getElementById("dayThreeTemperature").innerHTML =
-//         Math.round(data.list[16].main.temp) + "°C";
-// }
-
-// async function dayFourForecast() {
-//     const result = await fetch(
-//         fiveDaysApiUrl + `&q=${city}` + `&appid=${KevinApiKey}`
-//     );
-//     let data = await result.json();
-
-//     if (data.list[24].weather[0].main == "Clouds") {
-//         weatherImage.src = "images/cloud.png";
-//     } else if (data.list[24].weather[0].main == "Clear") {
-//         weatherImage.src = "images/sun.png";
-//     } else if (data.list[24].weather[0].main == "Rain") {
-//         weatherImage.src = "images/raining.png";
-//     }
-
-//     document.getElementById("dayFourTemperature").innerHTML =
-//         Math.round(data.list[24].main.temp) + "°C";
-// }
-
-// async function dayFiveForecast() {
-//     const result = await fetch(
-//         fiveDaysApiUrl + `&q=${city}` + `&appid=${KevinApiKey}`
-//     );
-//     let data = await result.json();
-
-//     if (data.list[32].weather[0].main == "Clouds") {
-//         weatherImage.src = "images/cloud.png";
-//     } else if (data.list[32].weather[0].main == "Clear") {
-//         weatherImage.src = "images/sun.png";
-//     } else if (data.list[32].weather[0].main == "Rain") {
-//         weatherImage.src = "images/raining.png";
-//     }
-
-//     document.getElementById("dayFiveTemperature").innerHTML =
-//         Math.round(data.list[32].main.temp) + "°C";
-// }
-
-// todayForecast("vancouver");
-// tomorrowForecast("vancouver");
-// dayThreeForecast("vancouver");
-// dayFourForecast("vancouver");
-// dayFiveForecast("vancouver");
-
-// searchBtn.addEventListener("click", () => {
-//     todayForecast(searchBar.value);
-//     tomorrowForecast(searchBar.value);
-//     dayThreeForecast(searchBar.value);
-//     dayFourForecast(searchBar.value);
-//     dayFiveForecast(searchBar.value);
-// });
+const weatherImage1 = document.querySelector("#weatherIcon1");
+const weatherImage2 = document.querySelector("#weatherIcon2");
+const weatherImage3 = document.querySelector("#weatherIcon3");
+const weatherImage4 = document.querySelector("#weatherIcon4");
+const weatherImage5 = document.querySelector("#weatherIcon5");
+// const searchBar = document.querySelector(".headerBar input");
+// const searchBtn = document.querySelector(".headerBar button");
 
 async function fiveDaysForecast(city) {
     const result = await fetch(
@@ -119,17 +17,55 @@ async function fiveDaysForecast(city) {
 
     console.log(data);
 
-    for (let i = 0; i <= 32; i += 8) {
-        document.getElementById("dayFiveTemperature").innerHTML =
-            Math.round(data.list[i].main.temp) + "°C";
+    document.querySelector("#todayTemperature").innerHTML =
+        Math.round(data.list[0].main.temp) + "°C";
+    document.querySelector("#tomorrowTemperature").innerHTML =
+        Math.round(data.list[8].main.temp) + "°C";
+    document.querySelector("#dayThreeTemperature").innerHTML =
+        Math.round(data.list[16].main.temp) + "°C";
+    document.querySelector("#dayFourTemperature").innerHTML =
+        Math.round(data.list[24].main.temp) + "°C";
+    document.querySelector("#dayFiveTemperature").innerHTML =
+        Math.round(data.list[32].main.temp) + "°C";
 
-        if (data.list[i].weather[0].main == "Clouds") {
-            weatherImage.src = "weather_images/cloud.png";
-        } else if (data.list[i].weather[0].main == "Clear") {
-            weatherImage.src = "weather_images/clear.png";
-        } else if (data.list[i].weather[0].main == "Rain") {
-            weatherImage.src = "weather_images/raining.png";
-        }
+    if (data.list[0].weather[0].main == "Clouds") {
+        weatherImage1.src = "weather_images/cloud.png";
+    } else if (data.list[0].weather[0].main == "Clear") {
+        weatherImage1.src = "weather_images/clear.png";
+    } else if (data.list[0].weather[0].main == "Rain") {
+        weatherImage1.src = "weather_images/raining.png";
+    }
+
+    if (data.list[8].weather[0].main == "Clouds") {
+        weatherImage2.src = "weather_images/cloud.png";
+    } else if (data.list[8].weather[0].main == "Clear") {
+        weatherImage2.src = "weather_images/clear.png";
+    } else if (data.list[8].weather[0].main == "Rain") {
+        weatherImage2.src = "weather_images/raining.png";
+    }
+
+    if (data.list[16].weather[0].main == "Clouds") {
+        weatherImage3.src = "weather_images/cloud.png";
+    } else if (data.list[16].weather[0].main == "Clear") {
+        weatherImage3.src = "weather_images/clear.png";
+    } else if (data.list[16].weather[0].main == "Rain") {
+        weatherImage3.src = "weather_images/raining.png";
+    }
+
+    if (data.list[24].weather[0].main == "Clouds") {
+        weatherImage4.src = "weather_images/cloud.png";
+    } else if (data.list[24].weather[0].main == "Clear") {
+        weatherImage4.src = "weather_images/clear.png";
+    } else if (data.list[24].weather[0].main == "Rain") {
+        weatherImage4.src = "weather_images/raining.png";
+    }
+
+    if (data.list[32].weather[0].main == "Clouds") {
+        weatherImage5.src = "weather_images/cloud.png";
+    } else if (data.list[32].weather[0].main == "Clear") {
+        weatherImage5.src = "weather_images/clear.png";
+    } else if (data.list[32].weather[0].main == "Rain") {
+        weatherImage5.src = "weather_images/raining.png";
     }
 }
 
