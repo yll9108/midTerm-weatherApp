@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(`#condition${i}`).innerHTML = "Clouds"
           }
           else if(data.list[i-1].weather[0].main == "Clear"){
-            document.querySelector(`#condition-icon${i}`).src = "weather_images/sun.png";
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/clear.png";
             document.querySelector(`#condition${i}`).innerHTML = "Clear"
           }
           else if(data.list[i-1].weather[0].main == "Rain" || data.list[i-1].weather[0].description == "moder"){
