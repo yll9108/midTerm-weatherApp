@@ -1,3 +1,60 @@
-#title{
-    color:gray
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.4em;
+    letter-spacing: 0.03em;
+    body {
+        background-image: url("../weather_images/photo.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        header {
+            h1 {
+                color: white;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .mainSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+            .main {
+                width: 70vw;
+                height: 120vh;
+                border-radius: 10px;
+                .headerbar {
+                    .favoriteCities {
+                        color: white;
+                    }
+                }
+                #title {
+                    color: white;
+                }
+                .currentWeather {
+                    background-color: #118ab2;
+                    border-radius: 10px;
+                    padding: 20px;
+                }
+                .forecast {
+                    .dayForecast {
+                        background-color: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("../weather_images/bg3.jpeg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+    }
 }
