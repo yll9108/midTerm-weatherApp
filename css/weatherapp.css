@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 }
-* body header h1 {
+* body header h4 {
   color: white;
   display: flex;
   justify-content: center;
@@ -30,7 +30,6 @@
 }
 * body .mainSection .main #title {
   color: white;
-  font-size: 1.5rem;
 }
 * body .mainSection .main .currentWeather {
   background-color: #118ab2;
@@ -38,7 +37,7 @@
   padding: 20px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   body {
     background-image: url("../weather_images/bg3.jpeg");
     background-repeat: repeat-x;

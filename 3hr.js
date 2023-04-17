@@ -25,34 +25,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 "&deg" +
                 "C";
 
-            if (
-                data.list[i - 1].weather[0].main == "Rain" ||
-                data.list[i - 1].weather[0].description == "light rain"
-            ) {
-                document.querySelector(`#condition-icon${i}`).src =
-                    "weather_images/rain.webp";
-                document.querySelector(`#condition${i}`).innerHTML = "Raining";
-            } else if (data.list[i - 1].weather[0].main == "Snow") {
-                document.querySelector(`#condition-icon${i}`).src =
-                    "weather_images/snow.webp";
-                document.querySelector(`#condition${i}`).innerHTML = "Snowing";
-            } else if (data.list[i - 1].weather[0].main == "Clouds") {
-                document.querySelector(`#condition-icon${i}`).src =
-                    "weather_images/cloudy.png";
-                document.querySelector(`#condition${i}`).innerHTML = "Clouds";
-            } else if (data.list[i - 1].weather[0].main == "Clear") {
-                document.querySelector(`#condition-icon${i}`).src =
-                    "weather_images/sun.png";
-                document.querySelector(`#condition${i}`).innerHTML = "Clear";
-            } else if (
-                data.list[i - 1].weather[0].main == "Rain" ||
-                data.list[i - 1].weather[0].description == "moder"
-            ) {
-                document.querySelector(`#condition-icon${i}`).src =
-                    "weather_images/rain.webp";
-                document.querySelector(`#condition${i}`).innerHTML =
-                    "Moderate Rain";
-            }
+          if(data.list[i-1].weather[0].main == "Rain" || data.list[i-1].weather[0].description == "light rain"){
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/raining.png";
+            document.querySelector(`#condition${i}`).innerHTML = "Raining"
+          }
+          else if(data.list[i-1].weather[0].main == "Snow"){
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/snowing.png";
+            document.querySelector(`#condition${i}`).innerHTML = "Snowing"
+          }
+          else if(data.list[i-1].weather[0].main == "Clouds"){
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/cloud.png";
+            document.querySelector(`#condition${i}`).innerHTML = "Clouds"
+          }
+          else if(data.list[i-1].weather[0].main == "Clear"){
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/clear.png";
+            document.querySelector(`#condition${i}`).innerHTML = "Clear"
+          }
+          else if(data.list[i-1].weather[0].main == "Rain" || data.list[i-1].weather[0].description == "moder"){
+            document.querySelector(`#condition-icon${i}`).src = "weather_images/raining.webp";
+            document.querySelector(`#condition${i}`).innerHTML = "Moderate Rain"
+          }
+          
         }
     }
 
