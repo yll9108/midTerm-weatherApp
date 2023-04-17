@@ -3,30 +3,25 @@ html body header h4 {
   display: flex;
   justify-content: center;
 }
-html body .mainSection .main {
-  width: 70vw;
-  height: 120vh;
-  border-radius: 10px;
-}
-html body .mainSection .headerBar {
+html body .mainSection .main .headerBar {
   display: flex;
   justify-content: space-between;
 }
-html body .mainSection .headerBar .favoriteCities {
+html body .mainSection .main .headerBar .favoriteCities {
   width: 10rem;
 }
-html body .mainSection .headerBar #searchCity #searchBar {
+html body .mainSection .main .headerBar #searchCity #searchBar {
   width: 15rem;
   height: 2rem;
   padding-left: 0.5rem;
 }
-html body .mainSection .headerBar #searchCity #searchBar::-moz-placeholder {
+html body .mainSection .main .headerBar #searchCity #searchBar::-moz-placeholder {
   font-size: 1rem;
 }
-html body .mainSection .headerBar #searchCity #searchBar::placeholder {
+html body .mainSection .main .headerBar #searchCity #searchBar::placeholder {
   font-size: 1rem;
 }
-html body .mainSection .headerBar #searchCity #searchBtn {
+html body .mainSection .main .headerBar #searchCity #searchBtn {
   width: 5rem;
   height: 2rem;
   font-size: 1rem;

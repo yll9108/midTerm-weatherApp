@@ -7,29 +7,26 @@ html {
         }
         .mainSection {
             .main {
-                width: 70vw;
-                height: 120vh;
-                border-radius: 10px;
-            }
-            .headerBar {
-                display: flex;
-                justify-content: space-between;
-                .favoriteCities {
-                    width: 10rem;
-                }
-                #searchCity {
-                    #searchBar {
-                        width: 15rem;
-                        height: 2rem;
-                        padding-left: 0.5rem;
+                .headerBar {
+                    display: flex;
+                    justify-content: space-between;
+                    .favoriteCities {
+                        width: 10rem;
                     }
-                    #searchBar::placeholder {
-                        font-size: 1rem;
-                    }
-                    #searchBtn {
-                        width: 5rem;
-                        height: 2rem;
-                        font-size: 1rem;
+                    #searchCity {
+                        #searchBar {
+                            width: 15rem;
+                            height: 2rem;
+                            padding-left: 0.5rem;
+                        }
+                        #searchBar::placeholder {
+                            font-size: 1rem;
+                        }
+                        #searchBtn {
+                            width: 5rem;
+                            height: 2rem;
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
