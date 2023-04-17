@@ -74,20 +74,24 @@ html body .mainSection .forecast .dayForecast #D4 #weatherIcon5 {
   html body .mainSection .main .forecast .dayForecast #D2,
   html body .mainSection .main .forecast .dayForecast #D3,
   html body .mainSection .main .forecast .dayForecast #D4 {
-    width: 2.5rem;
+    background-image: url("../weather_images/bg2.avif");
+    width: 1.5rem;
     padding: 1rem;
+    margin: 0.3rem;
   }
   html body .mainSection .main .forecast .dayForecast #today h1,
-  html body .mainSection .main .forecast .dayForecast #today h2,
   html body .mainSection .main .forecast .dayForecast #tomorrow h1,
-  html body .mainSection .main .forecast .dayForecast #tomorrow h2,
   html body .mainSection .main .forecast .dayForecast #D2 h1,
-  html body .mainSection .main .forecast .dayForecast #D2 h2,
   html body .mainSection .main .forecast .dayForecast #D3 h1,
-  html body .mainSection .main .forecast .dayForecast #D3 h2,
-  html body .mainSection .main .forecast .dayForecast #D4 h1,
-  html body .mainSection .main .forecast .dayForecast #D4 h2 {
+  html body .mainSection .main .forecast .dayForecast #D4 h1 {
     font-size: 0.5rem;
+  }
+  html body .mainSection .main .forecast .dayForecast #today h2,
+  html body .mainSection .main .forecast .dayForecast #tomorrow h2,
+  html body .mainSection .main .forecast .dayForecast #D2 h2,
+  html body .mainSection .main .forecast .dayForecast #D3 h2,
+  html body .mainSection .main .forecast .dayForecast #D4 h2 {
+    font-size: 0.7rem;
   }
   html body .mainSection .main .forecast .dayForecast #today #weatherIcon1,
   html body .mainSection .main .forecast .dayForecast #today #weatherIcon2,
@@ -114,8 +118,8 @@ html body .mainSection .forecast .dayForecast #D4 #weatherIcon5 {
   html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon3,
   html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon4,
   html body .mainSection .main .forecast .dayForecast #D4 #weatherIcon5 {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin: 1rem;
   }
 }/*# sourceMappingURL=5days.css.map */

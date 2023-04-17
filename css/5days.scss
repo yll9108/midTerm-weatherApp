@@ -56,19 +56,23 @@ html {
                             #D2,
                             #D3,
                             #D4 {
-                                width: 2.5rem;
+                                background-image: url("../weather_images/bg2.avif");
+                                width: 1.5rem;
                                 padding: 1rem;
-                                h1,
-                                h2 {
+                                margin: 0.3rem;
+                                h1 {
                                     font-size: 0.5rem;
+                                }
+                                h2 {
+                                    font-size: 0.7rem;
                                 }
                                 #weatherIcon1,
                                 #weatherIcon2,
                                 #weatherIcon3,
                                 #weatherIcon4,
                                 #weatherIcon5 {
-                                    width: 1rem;
-                                    height: 1rem;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
                                     margin: 1rem;
                                 }
                             }
