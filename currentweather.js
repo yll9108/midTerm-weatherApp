@@ -86,7 +86,6 @@ function initMap() {
 
     const options = {
         types: ["(cities)"],
-        componentRestrictions: { country: "ca" },
     };
     const input = document.getElementById("searchBar");
     // 定義input,裡面存放searchBar的資料
