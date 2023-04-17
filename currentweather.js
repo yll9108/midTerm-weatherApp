@@ -67,6 +67,20 @@ function initMap() {
         ).innerHTML = `Feels like: ${Math.round(
             currentData.main.feels_like
         )}°C`;
+
+        const currentWeatherImage = document.querySelector(
+            "#currentWeatherIcon"
+        );
+
+        if (currentData.weather[0].main == "Clouds") {
+            currentWeatherImage.src = "weather_images/cloud.png";
+        } else if (currentData.weather[0].main == "Clear") {
+            currentWeatherImage.src = "weather_images/clear.png";
+        } else if (currentData.weather[0].main == "Rain") {
+            currentWeatherImage.src = "weather_images/raining.png";
+        } else if (currentData.weather[0].main == "Snowing") {
+            currentWeatherImage.src = "weather_images/snowing.png";
+        }
     }
 
     currentWeather("Vancouver");
