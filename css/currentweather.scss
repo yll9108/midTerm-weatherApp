@@ -17,9 +17,20 @@ html {
                 .favoriteCities {
                     width: 10rem;
                 }
-                .searchBar {
-                    width: 10rem;
-                    flex-direction: end;
+                #searchCity {
+                    #searchBar {
+                        width: 15rem;
+                        height: 2rem;
+                        padding-left: 0.5rem;
+                    }
+                    #searchBar::placeholder {
+                        font-size: 1rem;
+                    }
+                    #searchBtn {
+                        width: 5rem;
+                        height: 2rem;
+                        font-size: 1rem;
+                    }
                 }
             }
 

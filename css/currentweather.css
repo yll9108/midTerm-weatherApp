@@ -15,9 +15,21 @@ html body .mainSection .headerBar {
 html body .mainSection .headerBar .favoriteCities {
   width: 10rem;
 }
-html body .mainSection .headerBar .searchBar {
-  width: 10rem;
-  flex-direction: end;
+html body .mainSection .headerBar #searchCity #searchBar {
+  width: 15rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+html body .mainSection .headerBar #searchCity #searchBar::-moz-placeholder {
+  font-size: 1rem;
+}
+html body .mainSection .headerBar #searchCity #searchBar::placeholder {
+  font-size: 1rem;
+}
+html body .mainSection .headerBar #searchCity #searchBtn {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
 }
 html body .mainSection .currentWeather {
   border-radius: 10px;
