@@ -18,54 +18,79 @@ async function fiveDaysForecast(city) {
     console.log(data);
 
     document.querySelector("#todayTemperature").innerHTML =
-        Math.round(data.list[0].main.temp) + "°C";
+        Math.round(data.list[7].main.temp) + "°C";
     document.querySelector("#tomorrowTemperature").innerHTML =
-        Math.round(data.list[8].main.temp) + "°C";
+        Math.round(data.list[15].main.temp) + "°C";
     document.querySelector("#dayThreeTemperature").innerHTML =
-        Math.round(data.list[16].main.temp) + "°C";
+        Math.round(data.list[23].main.temp) + "°C";
     document.querySelector("#dayFourTemperature").innerHTML =
-        Math.round(data.list[24].main.temp) + "°C";
+        Math.round(data.list[31].main.temp) + "°C";
     document.querySelector("#dayFiveTemperature").innerHTML =
-        Math.round(data.list[32].main.temp) + "°C";
+        Math.round(data.list[39].main.temp) + "°C";
 
-    if (data.list[0].weather[0].main == "Clouds") {
-        weatherImage1.src = "weather_images/cloud.png";
-    } else if (data.list[0].weather[0].main == "Clear") {
-        weatherImage1.src = "weather_images/clear.png";
-    } else if (data.list[0].weather[0].main == "Rain") {
-        weatherImage1.src = "weather_images/raining.png";
-    }
-
-    if (data.list[8].weather[0].main == "Clouds") {
+    if (data.list[7].weather[0].main == "Clouds") {
         weatherImage2.src = "weather_images/cloud.png";
-    } else if (data.list[8].weather[0].main == "Clear") {
+    } else if (data.list[7].weather[0].main == "Clear") {
         weatherImage2.src = "weather_images/clear.png";
-    } else if (data.list[8].weather[0].main == "Rain") {
+    } else if (data.list[7].weather[0].main == "Rain") {
         weatherImage2.src = "weather_images/raining.png";
     }
 
-    if (data.list[16].weather[0].main == "Clouds") {
+    if (data.list[15].weather[0].main == "Clouds") {
         weatherImage3.src = "weather_images/cloud.png";
-    } else if (data.list[16].weather[0].main == "Clear") {
+    } else if (data.list[15].weather[0].main == "Clear") {
         weatherImage3.src = "weather_images/clear.png";
-    } else if (data.list[16].weather[0].main == "Rain") {
+    } else if (data.list[15].weather[0].main == "Rain") {
         weatherImage3.src = "weather_images/raining.png";
     }
 
-    if (data.list[24].weather[0].main == "Clouds") {
+    if (data.list[23].weather[0].main == "Clouds") {
         weatherImage4.src = "weather_images/cloud.png";
-    } else if (data.list[24].weather[0].main == "Clear") {
+    } else if (data.list[23].weather[0].main == "Clear") {
         weatherImage4.src = "weather_images/clear.png";
-    } else if (data.list[24].weather[0].main == "Rain") {
+    } else if (data.list[23].weather[0].main == "Rain") {
         weatherImage4.src = "weather_images/raining.png";
     }
 
-    if (data.list[32].weather[0].main == "Clouds") {
+    if (data.list[31].weather[0].main == "Clouds") {
         weatherImage5.src = "weather_images/cloud.png";
-    } else if (data.list[32].weather[0].main == "Clear") {
+    } else if (data.list[31].weather[0].main == "Clear") {
         weatherImage5.src = "weather_images/clear.png";
-    } else if (data.list[32].weather[0].main == "Rain") {
+    } else if (data.list[31].weather[0].main == "Rain") {
         weatherImage5.src = "weather_images/raining.png";
+    }
+
+    if (data.list[39].weather[0].main == "Clouds") {
+        weatherImage1.src = "weather_images/cloud.png";
+    } else if (data.list[39].weather[0].main == "Clear") {
+        weatherImage1.src = "weather_images/clear.png";
+    } else if (data.list[39].weather[0].main == "Rain") {
+        weatherImage1.src = "weather_images/raining.png";
+    }
+
+    const currentDay = new Date();
+    const weekday = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+    ];
+
+    console.log(currentDay.getDay());
+
+    function date(day) {
+        if (day + currentDay.getDay() > 6) {
+            return day + currentDay.getDay() - 7;
+        } else {
+            return day + currentDay.getDay();
+        }
+    }
+
+    for (let i = 0; i < 5; i++) {
+        document.getElementById("day" + (i + 1)).innerHTML = weekday[date(i)];
     }
 }
 

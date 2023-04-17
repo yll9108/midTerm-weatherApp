@@ -1,7 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 0.4em;
-  letter-spacing: 0.03em;
 }
 * body {
   background-image: url("../weather_images/photo.jpeg");
@@ -36,10 +34,6 @@
   background-color: #118ab2;
   border-radius: 10px;
   padding: 20px;
-}
-* body .mainSection .main .forecast .dayForecast {
-  background-color: none;
-  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
