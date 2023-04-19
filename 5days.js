@@ -1,4 +1,4 @@
-const KevinApiKey = "cc736740f255d96b33c502e2115ebb79";
+const KevinApiKey = "c77784ebb91710984ac4bdf2158e585d";
 const fiveDaysApiUrl =
     "http://api.openweathermap.org/data/2.5/forecast?units=metric";
 const weatherImage1 = document.querySelector("#weatherIcon1");
